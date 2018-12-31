@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularElementExample</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="./dist/angular-element-example/polyfills.59df9a0c2df6300f8ede.js"></script>
+  <script type="text/javascript" src="./dist/angular-element-example/runtime.06daa30a2963fa413676.js"></script>
+  <script type="text/javascript" src="./dist/angular-element-example/scripts.e84e36a0841a046b4d25.js"></script>
+  <script type="text/javascript" src="./dist/angular-element-example/main.814d319d71ebb63c5f26.js"></script>
+  <link rel="icon" type="image/x-icon" href="./dist/angular-element-example/favicon.ico">
+<link rel="stylesheet" href="./dist/angular-element-example/styles.2be327b82e75343d6cbf.css">
+
+</head>
+<body>
+
+  <app-root id="angularElement" number="2" message="hello"></app-root>
+
+<script>
+  let app = document.getElementById("angularElement");
+  app.addEventListener('countChange', event => {
+    console.log(event);
+  })
+</script>
+</body>
+</html>
